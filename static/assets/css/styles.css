@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.song-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 50px;
+    background: linear-gradient(20deg, #731771, #4f2fba, #17fff7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.song-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.song-details {
+    display: flex;
+    flex-direction: column;
+}
+.song-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+.song-author {
+    font-size: 12px;
+    margin-left: 24px;
+    color: #f5f5f5;
+}
+.song-meta {
+    display: flex;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #f5f5f5;
+}
+.song-meta div {
+    margin-right: 10px;
+    color: #f5f5f5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .song-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .song-item img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .song-details {
+        align-items: center;
+    }
