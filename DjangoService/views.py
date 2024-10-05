@@ -1,6 +1,7 @@
 from django.core.files.base import ContentFile
 from django.shortcuts import render
 from django.db import IntegrityError
+from django.views.generic import ListView
 from .models import Song
 import os
 import psycopg2
@@ -53,7 +54,6 @@ def search_osu_file(item_path):
 
 def process_files(DIRECTORY_PATH):
     counter = 0
-    osu_maps = []
 
     # List all files and subdirectories in the main directory
     for item in os.listdir(DIRECTORY_PATH):
@@ -84,10 +84,14 @@ def process_files(DIRECTORY_PATH):
             print(f"({counter})ie{osu_data['title']}", end='')
 
 
+class MusicStorage(ListView):
+    model = Song
+    template_name = 'index.html'
+    context_object_name = 'songs'
+    paginate_by = 20
+    def get_template_names(self, *args, **kwargs):
+        if self.request.htmx:
+            return "template/song-list.html"
+        else:
+            return self.template_name
 
-
-def musicStorage(request):
-    Song.objects.all().delete()
-    process_files(DIRECTORY_PATH)
-    songs = Song.objects.all
-    return render(request, 'index.html', {'songs': songs})

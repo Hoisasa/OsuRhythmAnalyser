@@ -11,5 +11,7 @@ class Song(models.Model):
     bpm = models.IntegerField(default=10)
     disk_image = models.ImageField(upload_to='disks/', default='default/noted.jpg')
 
+    def __str__(self):
+        return self.name
     class Meta:
         unique_together = ('name', 'author', 'tags')

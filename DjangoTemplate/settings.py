@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-%&!h*n7d)k*()&su93*_uxy80l-l((fdv*b9-kaz6hj5j702@r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['songs.com', '.songs.com', '127.0.0.1']
 
 
 # Application definition
@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'DjangoService',
+    'django_htmx',
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [
@@ -48,6 +50,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django_htmx.middleware.HtmxMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 

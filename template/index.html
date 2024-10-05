@@ -3,25 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Song List</title>
     {% load static %}
+    <script src="{% static 'assets/js/htmx.min.js' %}" defer></script>
     <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
 </head>
 <body>
     <h1>Song List</h1>
-    {% for song in songs %}
-    <div class="song-item">
-        <img src="{{ song.disk_image.url }}" alt="Disk Image">
-        <div class="song-details">
-            <div class="song-title">{{ song.name }}</div>
-            <div class="song-author">{{ song.author }}</div>
-            <div class="song-meta">
-                <div>BPM: {{ song.bpm }}</div>
-                <div>Genre: {{ song.genre }}</div>
-                <div>Language: {{ song.language }}</div>
-            </div>
-        </div>
+    <div>
+        {% include 'template/song-list.html' with songs=songs %}
     </div>
-    {% endfor %}
 </body>
 </html>

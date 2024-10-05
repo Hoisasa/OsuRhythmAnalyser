@@ -1,5 +1,9 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #461857;
+}
+h1 {
+    color: #f5f5f5;
 }
 .song-item {
     display: flex;
@@ -7,7 +11,7 @@ body {
     padding: 20px;
     margin: 10px 0;
     border-radius: 50px;
-    background: linear-gradient(20deg, #731771, #4f2fba, #17fff7);
+    background: linear-gradient(20deg, #4a1f54, #d606b0, #f70a8c);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .song-item img {

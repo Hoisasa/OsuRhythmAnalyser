@@ -1,7 +1,9 @@
 from django.urls import path
 from . import views
 
+app_name = 'DjangoService'
+
 urlpatterns = [
-    path('', views.musicStorage, name='MusicCollection'),
+    path('', views.MusicStorage.as_view(), name='MusicCollection'),
     path('photos/', views.photosStorage, name='PhotoCollection'),
 ]
