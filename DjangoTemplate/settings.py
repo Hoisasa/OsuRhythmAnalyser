@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'DjangoService',
     'django_htmx',
     'django_cleanup.apps.CleanupConfig',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -132,7 +133,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/assets/img')
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
 
-LOGIN_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

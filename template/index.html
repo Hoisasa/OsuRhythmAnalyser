@@ -18,16 +18,40 @@
         <div class="inner-header">
             <div class="logo-box">
                 <img src="{% static 'assets/css/logo.png' %}" height="100"/>
-                <p class="AP-BoldStretched">Rythm analiser</p>
+                <p class="AP-BoldStretched">Rhythm analyser</p>
             </div>
-            <div class="slim-header"><p class="AP-BoldStretched">{{ user.username|default:" "}}</p></div>
+            <div class="slim-header">
+                <p class="AP-BoldStretched">
+                    {% if user.is_superuser %}
+                    🔴
+                    {% endif %}
+                    {{ user.get_username |default:" "}}
+                    {% if user.is_authenticated %}
+                    welcome!!
+                    {% else %}
+                    anauthorised 😤
+                    {% endif %}
+                </p>
+            </div>
             <div class="buttons-box">
-                <button><p class="AP-Normal">Analyse</p></button>
-                <button onclick="myFunction()"><p class="AP-Normal">Log in</p></button>
+                {% if user.is_authenticated%}
+                <button onclick="analyse()"><p class="AP-Normal">Analyse</p></button>
+                <button onclick="logout()"><p class="AP-Normal">Log out</p></button>
+                {% else %}
+                <button onclick="login()"><p class="AP-Normal">Log in</p></button>
+                {% endif %}
 
                 <script>
-                    function myFunction() {
-                        window.location.href = 'accounts/login';
+                    function login() {
+                        window.location.href = 'users/register';
+                    }
+
+                    function logout() {
+                         window.location.href = 'users/logout';
+                    }
+
+                    function analyse() {
+                         window.location.href = 'analyser/';
                     }
                 </script>
             </div>

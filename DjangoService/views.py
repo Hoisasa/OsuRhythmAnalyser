@@ -1,19 +1,14 @@
 from django.core.files.base import ContentFile
-from django.shortcuts import render
 from django.db import IntegrityError
 from django.views.generic import ListView
 from .models import Song
 import os
-import psycopg2
 import re
 
 # Create your views here.
 
 
 DIRECTORY_PATH = 'C:/Users/Raffie/PycharmProjects/MusicTest/static/assets/Songs'
-
-def photosStorage(request):
-    return render(request, 'photos_index.html')
 
 
 def scan_osu_file(item_path, file):
@@ -39,7 +34,7 @@ def scan_osu_file(item_path, file):
                 bpm_calc = True
             elif bpm_calc and bool(re.match(r'^[0-9-]', line)):
                 if float(line.split(',')[1]) > 1:
-                    osu_data['BPM'] = round( 60000/float(line.split(',')[1]) )
+                    osu_data['BPM'] = round(60000/float(line.split(',')[1]))
             elif line.startswith('[HitObjects]'):
                 return osu_data
 

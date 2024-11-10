@@ -5,5 +5,5 @@ app_name = 'DjangoService'
 
 urlpatterns = [
     path('', views.MusicStorage.as_view(), name='MusicCollection'),
-    path('photos/', views.photosStorage, name='PhotoCollection'),
+
 ]
