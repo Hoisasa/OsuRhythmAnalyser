@@ -1,0 +1,81 @@
+[Events]
+//Background and Video events
+//Storyboard Layer 0 (Background)
+//Storyboard Layer 1 (Fail)
+//Storyboard Layer 2 (Pass)
+//Storyboard Layer 3 (Foreground)
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,53866,54366,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,54533,55033,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,55199,55533,1,0.02720008
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,55699,56033,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,56199,56533,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,56533,57033,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,30866,31033,1,0.4984985
+ F,0,31116,31283,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,31283,31449,1,0
+ F,0,31533,31866,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,96533,97199,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,117533,117866,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,2533,2866,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,10533,10866,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ S,0,139199,,1
+ F,0,139199,139533,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,210533,210699,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,214866,215199,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,258864,259198,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,280531,280864,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,301531,301864,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,312198,312531,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,321864,322198,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,325364,325531,1,0
+ F,0,325698,325864,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,327864,328198,1,0
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,331198,331364,1,0
+Sprite,Foreground,Centre,"black.JPG",320,240
+ F,0,333781,338160,1
+Sprite,Foreground,Centre,"white.png",320,240
+ F,0,330698,330864,1,0
+ F,0,331031,331156,1,0
+Sprite,Foreground,Centre,"necrofantasia.jpg",320,240
+ F,0,200,366,1,0
+ S,0,200,366,1,1.83968
+ F,0,2866,3033,1,0
+ S,0,2866,3033,0.8054402,2.64864
+ F,0,5533,5699,1,0
+ S,0,5533,5699,0.8038457,2.964486
+ F,0,300531,300698,1,0
+ S,0,300531,300698,0.8054401,1.32768
+ F,0,311198,311364,1,0
+ S,0,311198,311364,0.8072795,1.872239
+ F,0,320531,320698,1,0
+ S,0,320531,320698,0.812214,1.795254
+ F,0,323198,323364,1,0
+ S,0,323198,323364,0.8101911,1.701071
+ F,0,325864,326031,1,0
+ S,0,325864,326031,0.80656,1.534295
+ F,0,328531,328698,1,0
+ S,0,328531,328698,0.8072553,2.711895
+//Storyboard Sound Samples

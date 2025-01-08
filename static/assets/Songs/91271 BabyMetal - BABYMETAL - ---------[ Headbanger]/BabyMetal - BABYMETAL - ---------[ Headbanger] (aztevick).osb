@@ -1,0 +1,9 @@
+[Events]
+//Background and Video events
+//Storyboard Layer 0 (Background)
+//Storyboard Layer 1 (Fail)
+//Storyboard Layer 2 (Pass)
+Sprite,Pass,Centre,"Songs\BABYMETAL - ---------[ Headbangeeeeerrrrr!!!!! ] (Full ver.)\Konachan.com - 158937 sample.jpg",320,240
+ M,0,177160,,320,240
+//Storyboard Layer 3 (Foreground)
+//Storyboard Sound Samples

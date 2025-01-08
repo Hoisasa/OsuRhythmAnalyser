@@ -1,0 +1,89 @@
+[Events]
+//Background and Video events
+//Storyboard Layer 0 (Background)
+Sprite,Background,Centre,"SB\bg\space.jpg",320,240
+ R,0,1399,2171,-0.6239998,0.848
+ S,0,2171,,1.536
+ F,0,2171,2392,1
+ R,0,2171,13642,0.848,-5.216
+ F,0,2392,13200,1
+ F,0,13200,13642,1,0
+ F,0,13642,,0
+Sprite,Background,Centre,"SB\bg\cave.jpg",320,240
+ M,0,406,,320,240
+ F,0,406,737,0,1
+ S,0,406,2171,1,1.456
+ F,0,737,1730,1
+ F,0,1730,2171,1,0
+//Storyboard Layer 1 (Fail)
+//Storyboard Layer 2 (Pass)
+//Storyboard Layer 3 (Foreground)
+Sprite,Foreground,Centre,"SB\text\backyard.png",320,240
+ M,0,847,,302,252
+ S,0,847,,0.624
+ F,0,847,1068,0,1
+ F,0,1068,1730,1
+ F,0,1730,2171,1,0
+Sprite,Foreground,Centre,"SB\everythingelse\whydoistillhavethispicture.png",320,240
+ S,0,2392,,0.9119999
+ R,0,2392,,-0.2560001
+ M,0,2392,2502,779,642,411,355
+ R,0,2392,2812,-0.2560001,-0.04800022
+ M,0,2502,5369,411,355
+ R,0,2812,3274,-0.04800022,-0.4012777
+ R,0,3274,3605,-0.4012777,0.07434399
+ R,0,3605,3936,0.07434399,-0.09003434
+ R,0,3936,,-0.09003434
+ R,0,3936,4046,-0.09003434,-0.5742104
+ R,0,4046,4156,-0.5742104,-0.2651471
+ R,0,4156,4267,-0.2651471,-0.4110272
+ R,0,4267,4377,-0.4110272,-0.1076109
+ R,0,4377,4535,-0.1076109,0.1917224
+ R,0,4535,5259,0.1917224,-0.7191542
+ R,0,5259,,-0.7191542
+Sprite,Foreground,Centre,"SB\text\ooo.png",320,240
+ M,0,8347,9671,504,124
+ M,0,9671,9781,504,124
+Sprite,Foreground,Centre,"SB\everythingelse\chuuni.png",320,240
+ R,0,5369,,0
+ M,0,5369,12318,242,240,195,281
+ S,0,5369,12318,0.9680001,0.7039999
+Sprite,Foreground,Centre,"SB\text\ooo.png",320,240
+ M,0,7906,8347,516,276
+Sprite,Foreground,Centre,"SB\everythingelse\whydoistillhavethispicture.png",320,240
+ M,0,12318,,439,896
+ S,0,12318,,2.512
+ R,0,12318,12539,0,-0.06399994
+ R,0,12539,13200,-0.06399994,0.1925793
+ F,0,13200,13642,1,0
+ R,0,13200,13642,0.1925793,0.1742509
+Sprite,Foreground,Centre,"SB\text\ooo.png",320,240
+ M,0,7575,7686,520,199
+ R,0,7686,,0
+ M,0,7686,8347,520,199
+Sprite,Foreground,Centre,"SB\text\ah.png",320,240
+ M,0,8678,9671,482,208
+ M,0,9671,9781,482,208
+Sprite,Foreground,Centre,"SB\text\ah.png",320,240
+ M,0,8899,9009,481,293
+ M,0,9009,9671,481,293
+ M,0,9671,9781,481,293
+Sprite,Foreground,Centre,"SB\text\ting.png",320,240
+ M,0,9781,10884,496,164
+Sprite,Foreground,Centre,"SB\text\tang.png",320,240
+ M,0,10112,10884,497,248
+Sprite,Foreground,Centre,"SB\text\walla.png",320,240
+ M,0,10884,11436,441,136
+Sprite,Foreground,Centre,"SB\text\walla.png",320,240
+ M,0,11215,11436,447,216
+Sprite,Foreground,Centre,"SB\text\bing.png",320,240
+ M,0,11436,12318,457,143
+Sprite,Foreground,Centre,"SB\text\bang.png",320,240
+ M,0,11656,12318,457,226
+Sprite,Foreground,Centre,"SB\text\thanks.png",320,240
+ M,0,172465,,157,278
+ S,0,172465,,0.3120003
+ F,0,172465,174230,0,1
+ F,0,174230,175994,1,0.9983003
+ F,0,175994,177759,0.9983003,0
+//Storyboard Sound Samples

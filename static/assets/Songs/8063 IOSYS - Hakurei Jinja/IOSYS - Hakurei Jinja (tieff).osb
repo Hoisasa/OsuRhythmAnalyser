@@ -1,0 +1,20 @@
+[Events]
+//Background and Video events
+//Storyboard Layer 0 (Background)
+//Storyboard Layer 1 (Fail)
+//Storyboard Layer 2 (Pass)
+//Storyboard Layer 3 (Foreground)
+Sprite,Foreground,Centre,"Let's DANCE!.png",320,240
+ M,0,37425,,320,240
+ F,0,37425,37521,0.124,0.376
+ F,0,37521,37617,0.376,0.6519999
+ F,0,37617,37714,0.6519999,0.824
+ F,0,37714,37810,0.824
+ F,0,37810,37906,0.824,1
+ F,0,37906,38002,1
+ F,0,38002,38098,1,0.7199999
+ F,0,38098,38194,0.7199999,0.524
+ F,0,38194,38290,0.524,0.376
+ F,0,38290,38387,0.376,0.228
+ F,0,38387,38483,0.228,0
+//Storyboard Sound Samples
