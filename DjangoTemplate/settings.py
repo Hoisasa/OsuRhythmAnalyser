@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': 'OsuSongsDB',
         'USER': 'postgres',
         'PASSWORD': 'okmuhbIJN$09',
-        'HOST': 'localhost',  # Or your PostgreSQL server address
+        'HOST': '192.168.0.105',  # Or your PostgreSQL server address
         'PORT': '5432',  # Default PostgreSQL port
     }
 }

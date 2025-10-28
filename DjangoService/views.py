@@ -1,6 +1,7 @@
 from django.core.files.base import ContentFile
 from django.db import IntegrityError
 from django.views.generic import ListView
+from django.conf import settings
 from .models import Song
 import os
 import re
@@ -8,7 +9,7 @@ import re
 # Create your views here.
 
 
-DIRECTORY_PATH = 'C:/Users/Raffie/PycharmProjects/MusicTest/static/assets/Songs'
+DIRECTORY_PATH = os.path.join(settings.BASE_DIR, 'static/assets/Songs')
 
 
 def scan_osu_file(item_path, file):
@@ -45,6 +46,8 @@ def search_osu_file(item_path):
         if file.is_file() and file.name.endswith('.osu'):
             osu_data = scan_osu_file(item_path, file)
             return osu_data
+        else:
+            return None
 
 
 def process_files(DIRECTORY_PATH):
@@ -55,12 +58,16 @@ def process_files(DIRECTORY_PATH):
         item_path = os.path.join(DIRECTORY_PATH, item)
         counter += 1
         osu_data = search_osu_file(item_path)
+        
+        # if the folder didn't contain osu files
+        if not osu_data:
+            continue
         if osu_data['img_path']:
             with open(osu_data['img_path'], 'rb') as image_file:
                 image_data = image_file.read()
             content_file = ContentFile(image_data, os.path.basename(osu_data['img_path']))
         else:
-            with open('C:/Users/Raffie/PycharmProjects/MusicTest/static/assets/img/default/noted.jpg', 'rb') as image_file:
+            with open(os.path.join(settings.MEDIA_ROOT, 'default/noted.jpg'), 'rb') as image_file:
                 image_data = image_file.read()
             content_file = ContentFile(image_data, os.path.basename('noted.jpg'))
         osu_map = Song(
@@ -80,6 +87,7 @@ def process_files(DIRECTORY_PATH):
 
 
 class MusicStorage(ListView):
+    
     model = Song
     template_name = 'index.html'
     context_object_name = 'songs'
